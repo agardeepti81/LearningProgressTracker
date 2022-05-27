@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Java", 
+        "id": "java"
+    },
+    {
+        "name": "CSS", 
+        "id": "css"
+    },
+    {
+        "name": "MySQL", 
+        "id": "mysql"
+    },
+    {
+        "name": "React", 
+        "id": "react"
+    },
+    {
+        "name": "Python", 
+        "id": "python"
+    }
+]
