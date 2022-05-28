@@ -8,13 +8,11 @@ class SubjectCard extends Component {
             <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-            {this.props.subject.map(sub => 
-              <Card.Title>{sub}</Card.Title>
-              )}
+              <Card.Title>{this.props.subject}</Card.Title>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
-            );
+          );
     }
 }
  

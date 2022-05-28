@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SubjectCard from './SubjectCard';
 import { Card, Button, SplitButton } from "react-bootstrap";
 
+
 var subject = [];
 subject.topics = [];
 
@@ -11,7 +12,8 @@ class FetchData extends Component {
         loading: true,
         count: null,
         subject: null,
-        data: null
+        data: null,
+        selcted: null
      } 
 
     showSubject = () => {
@@ -32,15 +34,29 @@ class FetchData extends Component {
                         loading: false,})
         console.log(data)
     }
+
+    selectSubject(index)
+    {
+        this.setState({selcted: index});
+    }
+
+    renderSelectedSubject() 
+    {
+        { !this.state.selcted ?  console.log("no selection") : console.log("paint the right panel")
+        return <div>completed</div>
+        
+    }     
+    }
     render() { 
         return (
         <React.Fragment>
         <div>
         {this.state.loading || !this.state.data ?
-        <div>loading... </div> : <h4>{this.showSubject()}</h4>
+        <div>loading... </div> : this.state.data.map((element) => <div><SubjectCard subject={element.subject} /></div>)
            
         }          
         </div>   
+        {this.renderSelectedSubject()}
         </React.Fragment>
         )
     }
