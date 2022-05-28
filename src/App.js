@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import FetchData from './components/FetchData';
+
+import ScreenDisplay from './components/ScreenDisplay';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>New Scope Project</h1>
-      <FetchData/>
+      <ScreenDisplay/>
     </div>
   );
 }
