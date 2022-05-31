@@ -3,5 +3,56 @@
         "name": "String",
         "id": "string",
         "category": "fundamental"
+    },
+    {
+        "name": "Call by Reference & Value",
+        "id": "callbyRV",
+        "category": "fundamental"
+    },
+    {
+        "name": "Loops & Branching",
+        "id": "loopsbranching",
+        "category": "fundamental"
+    },
+    {
+        "name": "Functions",
+        "id": "functions",
+        "category": "fundamental"
+    },
+    {
+        "name": "Variable Scope",
+        "id": "variablescope",
+        "category": "fundamental"
+    },
+    {
+        "name": "Command line parameters",
+        "id": "Commandlineparameters",
+        "category": "fundamental"
+    },
+    {
+        "name": "Packages",
+        "id": "packages",
+        "category": "advanced"
+    },
+    {
+        "name": "File Structure",
+        "id": "filestructure",
+        "category": "advanced"
+    },
+    {
+        "name": "String Buffer",
+        "id": "stringbuffer",
+        "category": "advanced"
+    },
+    {
+        "name": "Constructors",
+        "id": "constructors",
+        "category": "advanced"
+    },
+    {
+        "name": "Interfaces",
+        "id": "intefaces",
+        "category": "advanced"
     }
+    
 ]

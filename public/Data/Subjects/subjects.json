@@ -1,22 +1,27 @@
 [
     {
         "name": "Java", 
-        "id": "java"
+        "id": "java",
+        "logo": "/images/Java.svg"
     },
     {
         "name": "CSS", 
-        "id": "css"
+        "id": "css",
+        "logo": "/images/CSS.svg"
     },
     {
         "name": "MySQL", 
-        "id": "mysql"
+        "id": "mysql",
+        "logo": "/images/MySQL.svg"
     },
     {
         "name": "React", 
-        "id": "react"
+        "id": "react",
+        "logo": "/images/React.svg"
     },
     {
         "name": "Python", 
-        "id": "python"
+        "id": "python",
+        "logo": "/images/Python.svg"
     }
 ]

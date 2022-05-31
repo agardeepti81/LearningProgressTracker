@@ -5,11 +5,11 @@ class SubjectCard extends Component {
 
     render() { 
         return (
-            <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card style={{ width: "13rem", textAlign: "center", margin:"3px" }}>
+            <Card.Img className="subjectLogo" variant="top" src={this.props.logo} />
             <Card.Body>
-              <Card.Title>{this.props.subject}</Card.Title>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title className="subjectTitle">{this.props.subject}</Card.Title>
+              <Button variant="primary">Check Scope</Button>
             </Card.Body>
           </Card>
           );
