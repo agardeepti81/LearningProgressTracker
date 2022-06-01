@@ -2,6 +2,7 @@
   height: 90px;
 }
 
-.subjectTitle{
-  
+.cardstyle{
+  max-width: 30%;
+  float: left;
 }

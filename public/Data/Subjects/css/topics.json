@@ -1,0 +1,58 @@
+[
+    {
+        "name": "CSS Syntax",
+        "id": "csssyntax",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Selector",
+        "id": "cssselector",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Linking",
+        "id": "csslinking",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS colors",
+        "id": "csscolors",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Backgrounds",
+        "id": "cssbackgrounds",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Borders",
+        "id": "cssborders",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Margin",
+        "id": "cssmargin",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Padding",
+        "id": "csspadding",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Text",
+        "id": "csstext",
+        "category": "fundamental"
+    },
+    {
+        "name": "CSS Grid",
+        "id": "cssgrid",
+        "category": "advanced"
+    },
+    {
+        "name": "Flexbox",
+        "id": "flexbox",
+        "category": "advanced"
+    }
+    
+]

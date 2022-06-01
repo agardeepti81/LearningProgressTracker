@@ -5,6 +5,11 @@
         "logo": "/images/Java.svg"
     },
     {
+        "name": "C++", 
+        "id": "c++",
+        "logo": "/images/C++.svg"
+    },
+    {
         "name": "CSS", 
         "id": "css",
         "logo": "/images/CSS.svg"

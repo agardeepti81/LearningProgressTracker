@@ -1,0 +1,68 @@
+[
+    {
+        "name": "ReactJS Introduction to JSX",
+        "id": "reactjsintroductiontojsx",
+        "category": "fundamental"
+    },
+    {
+        "name": "ReactJS Rendering Elements",
+        "id": "reactjsrenderingelements",
+        "category": "fundamental"
+    },
+    {
+        "name": "ReactJS Components",
+        "id": "reactjsomponents",
+        "category": "fundamental"
+    },
+    {
+        "name": "ReactJS Props",
+        "id": "reactjsprops",
+        "category": "fundamental"
+    },
+    {
+        "name": "ReactJS State in React",
+        "id": "reactjstateinreact",
+        "category": "fundamental"
+    },
+    {
+        "name": "ReactJS Lifecycle of Components",
+        "id": "reactjslifecycleofcomponents",
+        "category": "fundamental"
+    },
+    {
+        "name": "Axios",
+        "id": "axios",
+        "category": "advanced"
+    },
+    {
+        "name": "Lazyloading",
+        "id": "lazyloading",
+        "category": "advanced"
+    },
+    {
+        "name": "Error Boundaries",
+        "id": "errorboundaries",
+        "category": "advanced"
+    },
+    {
+        "name": "Webworkers",
+        "id": "webworkers",
+        "category": "advanced"
+    },
+    {
+        "name": "IndexDB",
+        "id": "indexdb",
+        "category": "advanced"
+    },
+    {
+        "name": "Performance Checkers",
+        "id": "performancecheckers",
+        "category": "advanced"
+    },
+    {
+        "name": "Realtime",
+        "id": "realtime",
+        "category": "advanced"
+    }
+    
+]
