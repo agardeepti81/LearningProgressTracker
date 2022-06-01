@@ -4,13 +4,9 @@ import { Card, Button, SplitButton } from "react-bootstrap";
 class SubjectCard extends Component {
   render() {
     return (
-      <Card
-        className="mt-2 m-1"
-        style={{ width: "13rem", textAlign: "center" }}
-      >
+      <Card className="subjectCard">
         <Card.Img
           className="subjectLogo"
-          variant="top"
           src={this.props.subjectInfo.logo}
         />
         <Card.Body>

@@ -2,67 +2,67 @@
     {
         "name": "ReactJS Introduction to JSX",
         "id": "reactjsintroductiontojsx",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "ReactJS Rendering Elements",
         "id": "reactjsrenderingelements",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "ReactJS Components",
         "id": "reactjsomponents",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "ReactJS Props",
         "id": "reactjsprops",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "ReactJS State in React",
         "id": "reactjstateinreact",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "ReactJS Lifecycle of Components",
         "id": "reactjslifecycleofcomponents",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Axios",
         "id": "axios",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Lazyloading",
         "id": "lazyloading",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Error Boundaries",
         "id": "errorboundaries",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Webworkers",
         "id": "webworkers",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "IndexDB",
         "id": "indexdb",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Performance Checkers",
         "id": "performancecheckers",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Realtime",
         "id": "realtime",
-        "category": "advanced"
+        "category": "Advanced"
     }
     
 ]

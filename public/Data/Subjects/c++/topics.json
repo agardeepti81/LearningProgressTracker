@@ -2,57 +2,57 @@
     {
         "name": "Single and Multiple Inheritance",
         "id": "singleandmultipleinheritance",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Templates",
         "id": "templates",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Constructors",
         "id": "Constructors",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "input / output",
         "id": "inputoutput",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "References",
         "id": "references",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Conditional Compilation",
         "id": "conditionalcompilation",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "This Pointer",
         "id": "thispointer",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Virtual Functions",
         "id": "virtualfunctions",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Chaining",
         "id": "chaining",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Multithreading",
         "id": "multithreading",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Exception handling",
         "id": "exceptionhandling",
-        "category": "advanced"
+        "category": "Advanced"
     }
     
 ]
