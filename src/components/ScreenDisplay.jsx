@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SubjectScope from "./Subjectscope";
 import SubjectCard from "./SubjectCard";
-import TopicQuestions from "./TopicQuestions";
+// import TopicQuestions from "./TopicQuestions";
 
 class ScreenDisplay extends Component {
   state = {
@@ -23,33 +23,25 @@ class ScreenDisplay extends Component {
   changeActiveScope = (scopeId) => {
     this.setState({ currentScope: scopeId });
   }
+  
   render() {
+    if (this.state.loading || !this.state.data)
+      return (<div>loading...</div>)
+
     return (
-      <div>
-        <Container fluid>
-          <Row className="mt-5 p-3">
-            <Col className="bg-warning" md={{ span: 2 }}>
-              <div>
-                {this.state.loading || !this.state.data ? (
-                  <div>loading... </div>
-                ) : (
-                  this.state.data.map((element) => (
-                    <div>
-                      <SubjectCard
-                        subjectInfo={element}
-                        changeActiveScope={this.changeActiveScope}
-                      />
-                    </div>
-                  ))
-                )}
-              </div>
-            </Col>
-            <Col className="bg-danger" md={{ span: 9 }}>
-              {/* <SubjectScope currentScope={this.state.currentScope} /> */}
-              <TopicQuestions />
-            </Col>
-          </Row>
-        </Container>
+      <div id="scope-window">
+        <div id="scopeSelection">
+          {
+            this.state.data.map((element) => <SubjectCard
+              subjectInfo={element}
+              changeActiveScope={this.changeActiveScope}
+            />)
+          }
+        </div>
+        <div id="scopeView">
+          <SubjectScope currentScope={this.state.currentScope} />
+          {/* <TopicQuestions /> */}
+        </div>
       </div>
     );
   }

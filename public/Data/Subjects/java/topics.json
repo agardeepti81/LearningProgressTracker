@@ -2,57 +2,57 @@
     {
         "name": "String",
         "id": "string",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Call by Reference & Value",
         "id": "callbyRV",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Loops & Branching",
         "id": "loopsbranching",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Functions",
         "id": "functions",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Variable Scope",
         "id": "variablescope",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Command line parameters",
         "id": "Commandlineparameters",
-        "category": "fundamental"
+        "category": "Fundamental"
     },
     {
         "name": "Packages",
         "id": "packages",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "File Structure",
         "id": "filestructure",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "String Buffer",
         "id": "stringbuffer",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Constructors",
         "id": "constructors",
-        "category": "advanced"
+        "category": "Advanced"
     },
     {
         "name": "Interfaces",
         "id": "intefaces",
-        "category": "advanced"
+        "category": "Advanced"
     }
     
 ]
