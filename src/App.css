@@ -26,3 +26,13 @@
   max-width: 30%;
   float: left;
 }
+
+.questionTable{
+  margin: 20px;
+}
+
+#message{
+  text-align: center;
+  margin-top: 300px;
+  font-size: 25px;
+}
