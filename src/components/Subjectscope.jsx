@@ -51,6 +51,7 @@ class SubjectScope extends Component {
     for (const category in this.state.categories) {
       categoriesHTML.push(
         <div>
+          <p id="topictitle">{this.props.currentScopeName}</p>
           <Container fluid>
             <Row
               className="bg-primary p-3 m-5"

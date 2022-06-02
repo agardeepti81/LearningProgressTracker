@@ -17,12 +17,13 @@ class TopicQuestions extends Component {
       <div>loading... </div>
     ) : (
       <div className="questionTable">
+        <p id="topictitle">{this.props.activeTopicName}</p>
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th> </th>
-              <th>Q-ID</th>
-              <th>Questions</th>
+              <th class="col-sm-1"> </th>
+              <th class="col-sm-1">Q-ID</th>
+              <th class="col-md-8">Questions</th>
             </tr>
           </thead>
           <tbody>

@@ -12,6 +12,8 @@ class ScreenDisplay extends Component {
     currentScope: null,
     viewTopic: false,
     activeTopicId: false,
+    activeTopicName: null,
+    currentScopeName: null
   };
 
   async componentDidMount() {
@@ -22,16 +24,18 @@ class ScreenDisplay extends Component {
     console.log(data);
   }
 
-  changeActiveScope = (scopeId) => {
+  changeActiveScope = (scopeId, scopeName) => {
     this.setState({
       currentScope: scopeId,
+      currentScopeName: scopeName,
       viewTopic: false,
     });
   };
 
-  changeTopicView = (topicId) => {
+  changeTopicView = (topicId, topicName) => {
     this.setState({
       activeTopicId: topicId,
+      activeTopicName: topicName
     });
     this.toggleTopicView();
   };
@@ -57,12 +61,14 @@ class ScreenDisplay extends Component {
           {this.state.viewTopic ? (
             <TopicQuestions
               activeTopicId={this.state.activeTopicId}
+              activeTopicName={this.state.activeTopicName}
               currentScope={this.state.currentScope}
               back={this.toggleTopicView}
             />
           ) : (
             <SubjectScope
               currentScope={this.state.currentScope}
+              currentScopeName={this.state.currentScopeName}
               changeTopicView={this.changeTopicView}
             />
           )}

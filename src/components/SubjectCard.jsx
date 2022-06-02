@@ -16,7 +16,7 @@ class SubjectCard extends Component {
           <Button
             variant="primary"
             onClick={() => {
-              this.props.changeActiveScope(this.props.subjectInfo.id);
+              this.props.changeActiveScope(this.props.subjectInfo.id, this.props.subjectInfo.name);
             }}
           >
             Check Scope

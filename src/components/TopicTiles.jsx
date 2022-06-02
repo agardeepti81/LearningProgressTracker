@@ -23,7 +23,7 @@ class TopicTiles extends Component {
           <ProgressBar variant="success" now={percentage} animated />
           <Button
             onClick={() => {
-              this.props.changeTopicView(this.props.topic.id);
+              this.props.changeTopicView(this.props.topic.id, this.props.topic.name);
             }}
           >
             Submit
