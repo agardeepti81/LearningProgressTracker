@@ -31,9 +31,13 @@ class ScreenDisplay extends Component {
 
   changeTopicView = (topicId) => {
     this.setState({
-      viewTopic: true,
       activeTopicId: topicId,
     });
+    this.toggleTopicView();
+  };
+
+  toggleTopicView = () => {
+    this.setState({ viewTopic: !this.state.viewTopic });
   };
 
   render() {
@@ -51,9 +55,11 @@ class ScreenDisplay extends Component {
         </div>
         <div id="scopeView">
           {this.state.viewTopic ? (
-            <TopicQuestions 
-            activeTopicId={this.state.activeTopicId}
-            viewTopic={this.state.viewTopic} />
+            <TopicQuestions
+              activeTopicId={this.state.activeTopicId}
+              currentScope={this.state.currentScope}
+              back={this.toggleTopicView}
+            />
           ) : (
             <SubjectScope
               currentScope={this.state.currentScope}
