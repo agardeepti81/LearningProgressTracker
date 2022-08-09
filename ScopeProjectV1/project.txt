@@ -1,0 +1,10 @@
+    ${allSubjectData.subject.map(scope_template).join('')} 
+
+ topics.map(function(){
+        return `
+        <h2 class="topic-name" id='${topics.name}'>${topics.name}</h2>
+        <h4 class="question">
+            ${topics.questions ? display_question(topics.name, topics.questions) : ''}   
+        </h4>
+        `
+    })

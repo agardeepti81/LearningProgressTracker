@@ -1,0 +1,7 @@
+{"subject":"JAVA",
+"progress":[
+{"name":"Topic1","count":6,"selected":[{"code":"q4"},{"code":"q5"},{"code":"q2"}]},{"name":"Topic2","count":4,"selected":[{"code":"q4"},{"code":"q1"}]},{"name":"Topic3","count":8,"selected":[]}]}
+
+{"subject":"JAVA","progress":[{"name":"Topic1","count":6,"selected":[{"code":"q4"},{"code":"q5"},{"code":"q2"}]},{"name":"Topic2","count":4,"selected":[{"code":"q4"},{"code":"q1"}]},{"name":"Topic3","count":8,"selected":[]}]}
+
+ must be one of: S, N, B, SS, NS, BS, M, L, NULL, BOOL\nUnknown paramet

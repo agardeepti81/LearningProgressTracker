@@ -1,0 +1,21 @@
+initscore = {"statusCode":200,
+"body":
+{"Item":
+   {	"ID":"last",
+	"Progress":
+	[
+		{"name":"Topic1","count":6,"selected":[{"code":"q3"}]},				{"name":"Topic2","count":4,"selected":[{"code":"q3"}]},						{"name":"Topic3","count":8,"selected":[{"code":"q6"}{"code":"q3"}]}
+	],
+	"Subject":"JAVA"}
+   }
+}
+
+initScore.body.Item.Progress.length
+3
+initScore.body.Item.Progress[0].selected[0].code
+q5
+initScore.body.Item.Progress[0].selected.length
+2
+initScore.body.Item.Progress[0].selected[1].code
+q1
+
