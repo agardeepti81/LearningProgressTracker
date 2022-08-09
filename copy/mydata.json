@@ -1,0 +1,32 @@
+{
+    "subject": "JAVA",
+    "topics" : 
+    [
+        {
+            "name" : "Topic1",
+            "questions" : 
+            [
+                "Question 1",
+                "Question 2",
+                "Question 3",
+                "Question 4"
+            ] 
+        },
+        {
+            "name" : "Topic2",
+            "questions" : 
+            [
+                "Question 1",
+                "Question 2"
+            ] 
+        },
+        {
+            "name" : "Topic3",
+            "questions" : 
+            [
+                "Question 1",
+                "Question 2"
+            ] 
+        }
+    ]
+}

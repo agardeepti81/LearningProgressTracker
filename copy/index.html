@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="scope" style="margin-left: 450px; 
+margin-top:25px; 
+padding: 15px; 
+border: 5px solid black; 
+background-color: rgb(159, 248, 244); 
+width: 400px" >
+
+</div>
+
+<script>
+    
+    let text = {
+        "subject": "JAVA",
+        "topics" : 
+        [
+            {
+                "name" : "Topic1",
+                "questions" : 
+                [
+                    "Question 1",
+                    "Question 2",
+                    "Question 3",
+                    "Question 4"
+                ] 
+            },
+            {
+                "name" : "Topic2",
+                "questions" : 
+                [
+                    "Question 1",
+                    "Question 2"
+                ] 
+            },
+            {
+                "name" : "Topic3",
+                "questions" : 
+                [
+                    "Question 1",
+                    "Question 2"
+                ] 
+            }
+        ]
+    }
+    
+    function scope_template(tname)
+    {
+            return `
+            <h2 class="topic-name">${tname.name}</h2>
+            <h4 class="question">
+                ${tname.questions ? display_question(tname.questions) : ''}   
+            </h4>
+            `
+    }
+
+    function display_question(qcount)
+    {
+        return `
+        <ul class="qlist">
+            ${qcount.map(function(qlist){
+                return ` 
+                <li><input type="checkbox">${qlist}</li>
+                `
+            }).join('')}
+        </ul>    
+        `
+    }
+
+    document.getElementById("scope").innerHTML = `
+    <h1 class="course-name" 
+    style="text-align: center; 
+    width:200px; 
+    border: 2px dotted red;
+    background-color: #fff; 
+    padding: 4px"> 
+        ${text.subject} </h1>
+    ${text.topics.map(scope_template).join('')} 
+    `    
+</script>
+</body>
+</html>

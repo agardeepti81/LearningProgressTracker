@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+
+.Subject {
+    width: 150px;
+    height: 150px;
+    background-color: lightgoldenrodyellow;
+    color: Black;
+    margin: 20px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 2px solid black
+}
+
+.Version{
+    width: 100px;
+    height: 25px;
+    background-color: lightgray;
+    color: black;
+    margin: 10px;
+    padding-top: 5px;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+}
+
+#email{
+    position: relative;
+    float: right;
+    color: black;
+    padding: 2px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    text-align: text-top;
+    font-weight: bold;
+}
+
+.rightcolumn {
+    width: 25%;
+    float: left;
+}
+
+.header {
+    width: 95%;
+    padding: 20px;
+    margin-left: 20px;
+    text-align: right;
+    background: #ffffff;
+    border: 2px inset lightgray;
+    background-image: linear-gradient(to right, red,blue,white);
+  }
+
+  #newelement {
+      float: left;
+  }

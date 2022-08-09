@@ -1,0 +1,17 @@
+
+exports.handler = async (event) => {
+
+    let emailId = event.email;
+    let lessonProgress = event.lessonProgress;
+    let exercise = event.exerciseAnalytics;
+
+    let paramsUserProgress = {
+        TableName:'tech-bridge-userProgress',
+        Item: {
+            'emailId': emailId,
+            'lessonProgress': lessonProgress
+        }
+    };
+    await dynamodb.put(paramsUserProgress).promise();
+
+{"subject":"JAVA","progress":[{"name":"Topic1","count":6,"selected":[{"code":"q6"},{"code":"q2"},{"code":"q5"},{"code":"q3"},{"code":"q1"}]},{"name":"Topic2","count":4,"selected":[{"code":"q4"}]},{"name":"Topic3","count":8,"selected":[]}]}

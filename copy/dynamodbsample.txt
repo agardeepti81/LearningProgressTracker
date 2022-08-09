@@ -1,0 +1,24 @@
+# import two packages to help us with dates and date formatting
+from time import gmtime, strftime
+
+# create a DynamoDB object using the AWS SDK
+dynamodb = boto3.client('dynamodb')
+# use the DynamoDB object to select our table
+#table = dynamodb.Table('HelloWorldDatabase')
+# store the current time in a human readable format in a variable
+now = strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
+# import the JSON utility package since we will be working with a JSON object
+# define the handler function that the Lambda service will use an entry point
+def lambda_handler(event, context):
+    # extract values from the event object we got from the Lambda service
+# name = event['firstName'] +' '+ event['lastName']
+    #name = event['score']
+    val = json.loads('{"subject":"JAVA","progress":[{"name":"Topic1","count":6,"selected":[{"code":"q4"},{"code":"q5"},{"code":"q2"}]},{"name":"Topic2","count":4,"selected":[{"code":"q4"},{"code":"q1"}]},{"name":"Topic3","count":8,"selected":[]}]}')
+    val['ID'] = 'Deepti'
+    
+    # return a properly formatted JSON object
+    dynamodb.put_item(TableName='HelloWorldDatabase', Item= { 'ID' :  {'S':'Deepti'}, 'val': {'M': val}})
+    return {
+    'statusCode': 200,
+    'body': json.dumps(val)
+    }

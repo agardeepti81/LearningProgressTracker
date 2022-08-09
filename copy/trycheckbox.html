@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="demo">
+            <li> <input type="checkbox" id="c1" onclick="validate('c1')">Parameter 1</li>
+            <li> <input type="checkbox" id="c2" onclick="validate('c2')">Parameter 2</li>
+            <li> <input type="checkbox" id="c3" onclick="validate('c3')">Parameter 3</li>
+            <li> <input type="checkbox" id="c4" onclick="validate('c4')">Parameter 4</li>
+            <li> <input type="checkbox" id="c5" onclick="validate('c5')">Parameter 5</li>
+            <li> <input type="checkbox" id="c6" onclick="validate('c6')">Parameter 6</li>
+        </ul>
+        <input type="text" id="result" value="0">
+        <input type="text" id="result1" value="0">
+    </div>
+<script>
+const data = {
+    "Students" : 
+    [
+        {
+            "name" : "Abby",
+            "Subjects" : 
+            [
+                "English",
+                "Maths",
+                "Social Studies",
+                "Science"
+            ]
+        },
+        
+        {
+            "name" : "Quincy",
+            "Subjects" :
+            [
+                "English",
+                "Maths",
+                "Social Studies",
+                "Science",
+                "Music"
+            ]
+        },
+
+        {
+            "name" : "Meghan",
+            "Subjects" : 
+            [
+                "Physics",
+                "Chemistry",
+                "Biology",
+                "English",
+                "Maths",
+                "science"
+            ]
+        },
+        {
+            "name" : "Megha",
+            "Subjects" : 
+            [
+                "Physics",
+                "Chemistry",
+                "Biology",
+                "English",
+                "Maths",
+                "science"
+            ]
+        },
+    ]
+}
+
+var num = 0;
+function validate(ctrlid)
+{
+    var count = document.getElementById(ctrlid);
+    if(count.checked == 1)
+    {
+            num += 1;
+            document.getElementById("result").value = num;
+    }
+    else if(count.checked == 0)
+    {
+            num -= 1;
+            document.getElementById("result").value = num;
+    }
+}
+
+function scope_template(tname)
+{
+    return tname.Subjects.length;
+}
+
+
+x = data.Students.map(scope_template);
+function sumobject(x)
+{
+    var sum = 0;
+    for(let i=0; i<x.length; i++)
+        sum += x[i]
+    return sum;
+}
+document.getElementById("result1").value = x;
+
+</script>
+</body>
+</html>
